@@ -21,7 +21,7 @@ const CreateType: FC<ModalsProps> = ({ show, onHide }) => {
   return (
     <Modal show={show} onHide={onHide} centered>
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Add type</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">Add Type</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>

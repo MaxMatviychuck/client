@@ -27,6 +27,7 @@ const Auth = () => {
       ? await dispatch(userLogin({ email, password }))
           .then(unwrapResult)
           .then((response) => {
+            console.log("response", response);
             if (response.role === "admin") {
               history.push(ROUTES.ADMIN_ROUTE);
             } else {
@@ -106,7 +107,7 @@ const Auth = () => {
               </div>
             )}
             <Button variant={"outline-success"} type="submit">
-              {isLogin ? "Log In" : "Registration"}
+              {isLogin ? "Log In" : "Register"}
             </Button>
           </Row>
         </Form>

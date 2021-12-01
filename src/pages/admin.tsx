@@ -22,14 +22,14 @@ export const Admin = () => {
         className="mt-4 p-2"
         onClick={() => setTypeVisible(true)}
       >
-        Add type
+        add type
       </Button>
       <Button
         variant={"outline-dark"}
         className="mt-4 p-2"
         onClick={() => setBrandVisible(true)}
       >
-        Add brand
+        add brand
       </Button>
       <Button
         variant={"outline-dark"}
@@ -37,7 +37,7 @@ export const Admin = () => {
         onClick={() => setDeviceVisible(true)}
         disabled={!types.length || !brands.length}
       >
-        Add device
+        add device
       </Button>
       <CreateBrand show={brandVisible} onHide={() => setBrandVisible(false)} />
       <CreateDevice

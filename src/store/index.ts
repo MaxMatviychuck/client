@@ -16,5 +16,7 @@ export const createStore = () =>
     devTools: process.env.NODE_ENV !== "production",
   });
 
+export type AppState = ReturnType<typeof rootReducer>;
+export type AppStore = ReturnType<typeof createStore>;
 export type AppDispatch = ReturnType<typeof createStore>["dispatch"];
 export const useAppDispatch = (): AppDispatch => useDispatch<AppDispatch>();

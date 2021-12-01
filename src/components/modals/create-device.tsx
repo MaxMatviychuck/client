@@ -130,7 +130,12 @@ const CreateDevice: FC<DeviceModalProps> = ({
             placeholder="Enter Device Price"
             type="number"
           />
-          <Form.Control className="mt-3" type="file" onChange={selectFile} />
+          <Form.Control
+            className="mt-3"
+            type="file"
+            onChange={selectFile}
+            placeholder="Select Image"
+          />
           {deviceToUpdate && <span>Select Image Again</span>}
           <hr />
           <Form.Control
